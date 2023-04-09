@@ -4,10 +4,10 @@ namespace WebApplication1.Models
 {
     public class EnterpriseContext : DbContext
     {
-        public EnterpriseContext(DbContextOptions<EnterpriseContext> options)
-            : base(options)
+        public EnterpriseContext(DbContextOptions<EnterpriseContext> options) : base(options)
         {
+
         }
-        public DbSet<Enterprise> Enterprises { get; set; } = null!;
+        public DbSet<Enterprise> Enterprises { get; set; }
     }
 }
